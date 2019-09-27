@@ -1,0 +1,61 @@
+<!-- <nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand text-white">MIROS Exchange System</a>
+  <button class="btn btn-danger my-2 my-sm-0" (click)="onLogout()">Logout</button>
+</nav> -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand text-white">MIROS Exchange System</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav ml-auto">
+      
+      <li class="nav-item active" routerLinkActive="active">
+        <a class="nav-link" routerLink="/home/map">Mapa</a>
+      </li>
+      
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/menjacnica">MENJACNICA</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/korisnik">KORISNIK</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" *ngIf="userDetails"><i class="fa fa-user"></i> {{userDetails.userName}}</a>
+        </li>  
+      <li class="nav-item active">
+        <button class="btn btn-danger my-2 my-sm-0" (click)="onLogout()">Odjavi se</button>
+      </li> 
+    </ul>
+    
+  </div>  
+</nav>
+
+<!-- <div class="card m-5" style="width:18rem" *ngIf="userDetails">
+  <ul class="list-group">
+    <li class="list-group-item"><strong>Username : </strong>{{userDetails.userName}}</li>
+    <li class="list-group-item"><strong>FullName : </strong>{{userDetails.fullName}}</li>
+    <li class="list-group-item"><strong>Email : </strong>{{userDetails.email}}</li>
+  </ul>
+</div> -->
+
+
+<router-outlet></router-outlet>
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Angular</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto"> 
+          <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/calendar">Calendar</a></li>
+          <li class="nav-item active" routerLinkActive="active"><a class="nav-link" routerLink="/about-me">About Me</a></li>
+      </ul>
+  </div>
+</nav> -->
+
+
+
+

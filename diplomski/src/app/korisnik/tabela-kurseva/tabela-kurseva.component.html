@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <table class="table table-striped table-dark">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Menjačnica</th>
+          <th scope="col">Adresa</th>
+          <th scope="col">Kurs</th>
+          <th scope="col">Rastojanje</th>          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let exchangeRate of searchExchangeRateResponse.items;let i = index;">
+          <th scope="row">{{i + 1}}</th>
+          <td>{{ exchangeRate.exchangeOfficerName }}</td>
+          <td>{{ exchangeRate.exchangeOfficerAddress }}</td>
+          <td>{{ exchangeRate.rate }}</td>
+          <td>{{ exchangeRate.exchangeOfficerDistance }} metara</td>
+        </tr>       
+      </tbody>
+    </table>
+  </div>
+</div>
